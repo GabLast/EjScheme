@@ -1,0 +1,2 @@
+(define (elevar valor)
+  (expt valor 10))
