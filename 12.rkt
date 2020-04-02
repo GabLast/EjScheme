@@ -10,11 +10,8 @@
   (cond
     ((< valor -1) (elevar (exp 1) (* valor -1)))
     ((and (>= valor -1) (<= valor -1) (exp 1)))
-    ((> valor 1) (elevar (exp 1) (sqrt valor)))))
+    (else (elevar (exp 1) (sqrt valor)))))
 
 
-(f1 -100)
-(f1 100)
-
-(f2 -100)
-(f2 100)
+(map f1 '(-2 -1 0 1 2))
+(map f2 '(-2 -1 0 1 2))

@@ -1,0 +1,11 @@
+(define (largo lista)
+  (largoRec lista 0))
+
+(define (largoRec lista i)
+  (cond
+    ((null? lista) i)
+    (else (largoRec (cdr lista) (+ i 1)))))
+
+(define lista '(1 2 3 4))
+
+(largo lista)
